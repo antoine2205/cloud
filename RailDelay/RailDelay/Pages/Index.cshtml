@@ -1,0 +1,28 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    </ br>
+    <p>This website based on the <a href="https://hello.irail.be/api/1-0/">irail api</a>. This api is an 
+    attempt to make the railway time schedules in Belgium easily available for anyone. 
+    The iRail api allows anyone to query trains, stations, liveboards and connections.</p>
+    </ br>
+    <p>The access to this webside is restricted with via authetication with Microsoft OAuth. </p>
+    </ br>
+    <p>In the menu above there are two different implementations.</p>
+    </ br>
+    <p>The Delays menu-item gives access to a database for tracking indured delays. This data can be 
+    consumed via api-requests. ex. https://host/api/delays will produce a json with all records from 
+    the tabel delays.</p>
+    </ br>
+    <p>The Stations menu-item gives access to a list of all stations from the irail api. This data is 
+    uploaded dynamically from the api. This list can be sorted and searched. De details view give 
+    extra information about the station and if available a picture of the station ex. search for Brussel-Central.</p>
+    </ br>
+    <p>Enjoy</p>
+    
+</div>

@@ -1,0 +1,109 @@
+﻿@page
+@model RailDelay.Pages.Delays.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Delay</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Delay.TravelDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Delay.TravelDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Delay.TicketNumber)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Delay.TicketNumber)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Delay.LastDateOfUse)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Delay.LastDateOfUse)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Delay.DepartureTrainStationID)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Delay.DepartureTrainStationID)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Delay.DestinationTrainStationID)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Delay.DestinationTrainStationID)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Delay.TransferTrainStationID)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Delay.TransferTrainStationID)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Delay.PlannedDepartureTime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Delay.PlannedDepartureTime)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Delay.PlannedArrivalTime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Delay.PlannedArrivalTime)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Delay.PlannedTrain1Number)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Delay.PlannedTrain1Number)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Delay.PlannedTrain2Number)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Delay.PlannedTrain2Number)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Delay.ActualDepartureTime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Delay.ActualDepartureTime)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Delay.ActualArrivalTime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Delay.ActualArrivalTime)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Delay.ActualTrain1Number)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Delay.ActualTrain1Number)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Delay.ActualTrain2Number)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Delay.ActualTrain2Number)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Delay.Ticket)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Delay.Ticket.ID)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Delay.ID">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

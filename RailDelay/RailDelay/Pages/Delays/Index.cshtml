@@ -1,0 +1,120 @@
+﻿@page
+@model RailDelay.Pages.Delays.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Delay[0].TravelDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Delay[0].TicketNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Delay[0].LastDateOfUse)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Delay[0].DepartureTrainStationID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Delay[0].DestinationTrainStationID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Delay[0].TransferTrainStationID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Delay[0].PlannedDepartureTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Delay[0].PlannedArrivalTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Delay[0].PlannedTrain1Number)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Delay[0].PlannedTrain2Number)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Delay[0].ActualDepartureTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Delay[0].ActualArrivalTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Delay[0].ActualTrain1Number)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Delay[0].ActualTrain2Number)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Delay[0].Ticket)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Delay) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TravelDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TicketNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastDateOfUse)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DepartureTrainStationID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DestinationTrainStationID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TransferTrainStationID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PlannedDepartureTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PlannedArrivalTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PlannedTrain1Number)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PlannedTrain2Number)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ActualDepartureTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ActualArrivalTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ActualTrain1Number)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ActualTrain2Number)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ticket.ID)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

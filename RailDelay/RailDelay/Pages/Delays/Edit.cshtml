@@ -1,0 +1,105 @@
+﻿@page "{id:int?}"
+@model RailDelay.Pages.Delays.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Delay</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Delay.ID" />
+            <div class="form-group">
+                <label asp-for="Delay.TravelDate" class="control-label"></label>
+                <input asp-for="Delay.TravelDate" class="form-control" />
+                <span asp-validation-for="Delay.TravelDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Delay.TicketID" class="control-label"></label>
+                <select asp-for="Delay.TicketID" class="form-control" asp-items="ViewBag.TicketID"></select>
+                <span asp-validation-for="Delay.TicketID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Delay.TicketNumber" class="control-label"></label>
+                <input asp-for="Delay.TicketNumber" class="form-control" />
+                <span asp-validation-for="Delay.TicketNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Delay.LastDateOfUse" class="control-label"></label>
+                <input asp-for="Delay.LastDateOfUse" class="form-control" />
+                <span asp-validation-for="Delay.LastDateOfUse" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Delay.DepartureTrainStationID" class="control-label"></label>
+                <input asp-for="Delay.DepartureTrainStationID" class="form-control" />
+                <span asp-validation-for="Delay.DepartureTrainStationID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Delay.DestinationTrainStationID" class="control-label"></label>
+                <input asp-for="Delay.DestinationTrainStationID" class="form-control" />
+                <span asp-validation-for="Delay.DestinationTrainStationID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Delay.TransferTrainStationID" class="control-label"></label>
+                <input asp-for="Delay.TransferTrainStationID" class="form-control" />
+                <span asp-validation-for="Delay.TransferTrainStationID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Delay.PlannedDepartureTime" class="control-label"></label>
+                <input asp-for="Delay.PlannedDepartureTime" class="form-control" />
+                <span asp-validation-for="Delay.PlannedDepartureTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Delay.PlannedArrivalTime" class="control-label"></label>
+                <input asp-for="Delay.PlannedArrivalTime" class="form-control" />
+                <span asp-validation-for="Delay.PlannedArrivalTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Delay.PlannedTrain1Number" class="control-label"></label>
+                <input asp-for="Delay.PlannedTrain1Number" class="form-control" />
+                <span asp-validation-for="Delay.PlannedTrain1Number" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Delay.PlannedTrain2Number" class="control-label"></label>
+                <input asp-for="Delay.PlannedTrain2Number" class="form-control" />
+                <span asp-validation-for="Delay.PlannedTrain2Number" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Delay.ActualDepartureTime" class="control-label"></label>
+                <input asp-for="Delay.ActualDepartureTime" class="form-control" />
+                <span asp-validation-for="Delay.ActualDepartureTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Delay.ActualArrivalTime" class="control-label"></label>
+                <input asp-for="Delay.ActualArrivalTime" class="form-control" />
+                <span asp-validation-for="Delay.ActualArrivalTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Delay.ActualTrain1Number" class="control-label"></label>
+                <input asp-for="Delay.ActualTrain1Number" class="form-control" />
+                <span asp-validation-for="Delay.ActualTrain1Number" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Delay.ActualTrain2Number" class="control-label"></label>
+                <input asp-for="Delay.ActualTrain2Number" class="form-control" />
+                <span asp-validation-for="Delay.ActualTrain2Number" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
