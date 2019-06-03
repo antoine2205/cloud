@@ -13492,11 +13492,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\moena\\source\\repos\\RailDelay\\RailDelay\\RailDelay.csproj",
+      "projectUniqueName": "C:\\Users\\moena\\source\\repos\\RailDelay GitHub\\cloud\\RailDelay\\RailDelay\\RailDelay.csproj",
       "projectName": "RailDelay",
-      "projectPath": "C:\\Users\\moena\\source\\repos\\RailDelay\\RailDelay\\RailDelay.csproj",
+      "projectPath": "C:\\Users\\moena\\source\\repos\\RailDelay GitHub\\cloud\\RailDelay\\RailDelay\\RailDelay.csproj",
       "packagesPath": "C:\\Users\\moena\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\moena\\source\\repos\\RailDelay\\RailDelay\\obj\\",
+      "outputPath": "C:\\Users\\moena\\source\\repos\\RailDelay GitHub\\cloud\\RailDelay\\RailDelay\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

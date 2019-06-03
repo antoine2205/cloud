@@ -19,15 +19,13 @@ namespace RailDelay.Pages.Station
         {
             using (var httpClient = new HttpClient())
             {
-                PaginatedList<TrainStation> stationList = (PaginatedList<TrainStation>) new List<TrainStation>();
                 using (var response = await httpClient.GetAsync("http://api.irail.be/stations/?format=json&lang=en"))
                 {
                     string apiResponse = await response.Content.ReadAsStringAsync();
                     StationApi stationApi = new StationApi();
                     stationApi = JsonConvert.DeserializeObject<StationApi>(apiResponse);
                     IQueryable<TrainStation> stationApiQ = stationApi.Station.AsQueryable<TrainStation>();
-                    stationList = PaginatedList<TrainStation>.Create(stationApiQ, 1, 10);
-                    Station = stationList.FirstOrDefault(s => s.ID == id);
+                    Station = stationApiQ.FirstOrDefault(s => s.ID == id);
                 }
 
                 string StationId = Station.ID.Substring(Station.ID.Length - 9);
