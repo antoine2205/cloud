@@ -46,8 +46,8 @@ namespace RailDelay.Models
 
         public Delay Update(Delay delayChanges)
         {
-            var employee = context.Delay.Attach(delayChanges);
-            employee.State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+            var delay = context.Delay.Attach(delayChanges);
+            delay.State = Microsoft.EntityFrameworkCore.EntityState.Modified;
             context.SaveChanges();
             return delayChanges;
         }

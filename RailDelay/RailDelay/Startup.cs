@@ -14,6 +14,8 @@ using RailDelay.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using RailDelay.Models;
+using System.Data.SqlClient;
+using Microsoft.AspNetCore.Server.IISIntegration;
 
 namespace RailDelay
 {
@@ -38,7 +40,8 @@ namespace RailDelay
 
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
-                    Configuration.GetConnectionString("DefaultConnection")));
+                    //Configuration.GetConnectionString("DefaultConnection")));
+                    Configuration.GetConnectionString("AzureDBConnection")));
             services.AddDefaultIdentity<IdentityUser>()
                 .AddDefaultUI(UIFramework.Bootstrap4)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
@@ -46,8 +49,10 @@ namespace RailDelay
             services.AddAuthentication()
                 .AddMicrosoftAccount(microsoftOptions =>
                     {
-                        microsoftOptions.ClientId = Configuration["Authentication:Microsoft:ClientId"];
-                        microsoftOptions.ClientSecret = Configuration["Authentication:Microsoft:ClientSecret"];
+                        //microsoftOptions.ClientId = Configuration["Authentication:Microsoft:ClientId"];
+                        //microsoftOptions.ClientSecret = Configuration["Authentication:Microsoft:ClientSecret"];
+                        microsoftOptions.ClientId = "8c9f2a59-9a34-4d55-809d-1106979cb499";
+                        microsoftOptions.ClientSecret = "5OClUrrLBj5ty=O1@iv.MK2*og_a@ECL";
                     });
 
             //services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
@@ -59,7 +64,7 @@ namespace RailDelay
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            if (env.IsDevelopment())
+            if (env.IsDevelopment() || env.IsProduction())
             {
                 app.UseDeveloperExceptionPage();
                 app.UseDatabaseErrorPage();

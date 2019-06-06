@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "9730342b7b575aaeb702fae13ca2a10b3cc123ef"
+    "signature": "570ae4f6dfb974ccdb15ce903f8f9cf0e8aa8fba"
   },
   "compilationOptions": {
     "defines": [
@@ -25,7 +25,13 @@
       "RailDelay/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.App": "2.2.0",
+          "Microsoft.AspNetCore.AzureAppServices.HostingStartup": "2.2.5",
+          "Microsoft.AspNetCore.AzureAppServicesIntegration": "2.2.5",
+          "Microsoft.AspNetCore.AzureKeyVault.HostingStartup": "2.0.4",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
+          "Microsoft.Azure.Management.Fluent": "1.22.2",
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.22.2",
+          "Microsoft.Extensions.Logging.AzureAppServices": "2.2.5",
           "Microsoft.NETCore.App": "2.2.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.2.3"
         },
@@ -34,6 +40,604 @@
         },
         "compile": {
           "RailDelay.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.AzureAppServices.HostingStartup/2.2.5": {
+        "dependencies": {
+          "Microsoft.AspNetCore.AzureAppServicesIntegration": "2.2.5",
+          "Microsoft.Extensions.Configuration.EnvironmentVariables": "2.2.4"
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/Microsoft.AspNetCore.AzureAppServices.HostingStartup.dll": {
+            "assemblyVersion": "2.2.5.0",
+            "fileVersion": "2.2.5.19109"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp2.1/Microsoft.AspNetCore.AzureAppServices.HostingStartup.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.AzureAppServicesIntegration/2.2.5": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Hosting": "2.2.0",
+          "Microsoft.Extensions.Logging.AzureAppServices": "2.2.5"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.AzureAppServicesIntegration.dll": {
+            "assemblyVersion": "2.2.5.0",
+            "fileVersion": "2.2.5.19109"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.AzureAppServicesIntegration.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.AzureKeyVault.HostingStartup/2.0.4": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Hosting.Abstractions": "2.2.0",
+          "Microsoft.Azure.Services.AppAuthentication": "1.0.1",
+          "Microsoft.Extensions.Configuration.AzureKeyVault": "2.0.2",
+          "Microsoft.Extensions.Configuration.EnvironmentVariables": "2.2.4"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.AzureKeyVault.HostingStartup.dll": {
+            "assemblyVersion": "2.0.4.0",
+            "fileVersion": "2.0.4.18184"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.AzureKeyVault.HostingStartup.dll": {}
+        }
+      },
+      "Microsoft.Azure.KeyVault/3.0.1": {
+        "dependencies": {
+          "Microsoft.Azure.KeyVault.WebKey": "3.0.1",
+          "Microsoft.Rest.ClientRuntime": "2.3.18",
+          "Microsoft.Rest.ClientRuntime.Azure": "3.3.18",
+          "NETStandard.Library": "2.0.3",
+          "Newtonsoft.Json": "11.0.2",
+          "System.Net.Http": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.KeyVault.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.1.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.4/Microsoft.Azure.KeyVault.dll": {}
+        }
+      },
+      "Microsoft.Azure.KeyVault.WebKey/3.0.1": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3",
+          "Newtonsoft.Json": "11.0.2",
+          "System.Collections": "4.3.0",
+          "System.Collections.Concurrent": "4.3.0",
+          "System.Linq": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Security.Cryptography.Algorithms": "4.3.0",
+          "System.Security.Cryptography.Cng": "4.5.0"
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.KeyVault.WebKey.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.1.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.4/Microsoft.Azure.KeyVault.WebKey.dll": {}
+        }
+      },
+      "Microsoft.Azure.Management.AppService.Fluent/1.22.2": {
+        "dependencies": {
+          "Microsoft.Azure.Management.KeyVault.Fluent": "1.22.2",
+          "Microsoft.Azure.Management.Msi.Fluent": "1.22.2",
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.22.2",
+          "Microsoft.Azure.Management.Storage.Fluent": "1.22.2",
+          "Microsoft.Rest.ClientRuntime": "2.3.18",
+          "Microsoft.Rest.ClientRuntime.Azure": "3.3.18",
+          "NETStandard.Library": "2.0.3",
+          "System.Net.Http": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.AppService.Fluent.dll": {
+            "assemblyVersion": "1.0.0.60",
+            "fileVersion": "1.0.0.60"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.AppService.Fluent.dll": {}
+        }
+      },
+      "Microsoft.Azure.Management.Batch.Fluent/1.22.2": {
+        "dependencies": {
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.22.2",
+          "Microsoft.Azure.Management.Storage.Fluent": "1.22.2",
+          "Microsoft.Rest.ClientRuntime": "2.3.18",
+          "Microsoft.Rest.ClientRuntime.Azure": "3.3.18",
+          "NETStandard.Library": "2.0.3",
+          "System.Net.Http": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.Batch.Fluent.dll": {
+            "assemblyVersion": "1.0.0.60",
+            "fileVersion": "1.0.0.60"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.Batch.Fluent.dll": {}
+        }
+      },
+      "Microsoft.Azure.Management.BatchAI.Fluent/1.22.2": {
+        "dependencies": {
+          "Microsoft.Azure.Management.KeyVault.Fluent": "1.22.2",
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.22.2",
+          "Microsoft.Azure.Management.Storage.Fluent": "1.22.2",
+          "Microsoft.Rest.ClientRuntime": "2.3.18",
+          "Microsoft.Rest.ClientRuntime.Azure": "3.3.18",
+          "NETStandard.Library": "2.0.3",
+          "System.Net.Http": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.BatchAI.Fluent.dll": {
+            "assemblyVersion": "1.0.0.60",
+            "fileVersion": "1.0.0.60"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.BatchAI.Fluent.dll": {}
+        }
+      },
+      "Microsoft.Azure.Management.Cdn.Fluent/1.22.2": {
+        "dependencies": {
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.22.2",
+          "Microsoft.Rest.ClientRuntime": "2.3.18",
+          "Microsoft.Rest.ClientRuntime.Azure": "3.3.18",
+          "NETStandard.Library": "2.0.3",
+          "System.Net.Http": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.Cdn.Fluent.dll": {
+            "assemblyVersion": "1.0.0.60",
+            "fileVersion": "1.0.0.60"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.Cdn.Fluent.dll": {}
+        }
+      },
+      "Microsoft.Azure.Management.Compute.Fluent/1.22.2": {
+        "dependencies": {
+          "Microsoft.Azure.Management.Graph.RBAC.Fluent": "1.22.2",
+          "Microsoft.Azure.Management.Msi.Fluent": "1.22.2",
+          "Microsoft.Azure.Management.Network.Fluent": "1.22.2",
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.22.2",
+          "Microsoft.Azure.Management.Storage.Fluent": "1.22.2",
+          "Microsoft.Rest.ClientRuntime": "2.3.18",
+          "Microsoft.Rest.ClientRuntime.Azure": "3.3.18",
+          "NETStandard.Library": "2.0.3",
+          "System.Net.Http": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.Compute.Fluent.dll": {
+            "assemblyVersion": "1.0.0.60",
+            "fileVersion": "1.0.0.60"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.Compute.Fluent.dll": {}
+        }
+      },
+      "Microsoft.Azure.Management.ContainerInstance.Fluent/1.22.2": {
+        "dependencies": {
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.22.2",
+          "Microsoft.Azure.Management.Storage.Fluent": "1.22.2",
+          "Microsoft.Rest.ClientRuntime": "2.3.18",
+          "Microsoft.Rest.ClientRuntime.Azure": "3.3.18",
+          "NETStandard.Library": "2.0.3",
+          "System.Net.Http": "4.3.0",
+          "WindowsAzure.Storage": "8.1.4"
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.ContainerInstance.Fluent.dll": {
+            "assemblyVersion": "1.0.0.60",
+            "fileVersion": "1.0.0.60"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.ContainerInstance.Fluent.dll": {}
+        }
+      },
+      "Microsoft.Azure.Management.ContainerRegistry.Fluent/1.22.2": {
+        "dependencies": {
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.22.2",
+          "Microsoft.Azure.Management.Storage.Fluent": "1.22.2",
+          "Microsoft.Rest.ClientRuntime": "2.3.18",
+          "Microsoft.Rest.ClientRuntime.Azure": "3.3.18",
+          "NETStandard.Library": "2.0.3",
+          "System.Net.Http": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.ContainerRegistry.Fluent.dll": {
+            "assemblyVersion": "1.0.0.60",
+            "fileVersion": "1.0.0.60"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.ContainerRegistry.Fluent.dll": {}
+        }
+      },
+      "Microsoft.Azure.Management.ContainerService.Fluent/1.22.2": {
+        "dependencies": {
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.22.2",
+          "Microsoft.Rest.ClientRuntime": "2.3.18",
+          "Microsoft.Rest.ClientRuntime.Azure": "3.3.18",
+          "NETStandard.Library": "2.0.3",
+          "System.Net.Http": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.ContainerService.Fluent.dll": {
+            "assemblyVersion": "1.0.0.60",
+            "fileVersion": "1.0.0.60"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.ContainerService.Fluent.dll": {}
+        }
+      },
+      "Microsoft.Azure.Management.CosmosDB.Fluent/1.22.2": {
+        "dependencies": {
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.22.2",
+          "Microsoft.Rest.ClientRuntime": "2.3.18",
+          "Microsoft.Rest.ClientRuntime.Azure": "3.3.18",
+          "NETStandard.Library": "2.0.3",
+          "System.Net.Http": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.CosmosDB.Fluent.dll": {
+            "assemblyVersion": "1.0.0.60",
+            "fileVersion": "1.0.0.60"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.CosmosDB.Fluent.dll": {}
+        }
+      },
+      "Microsoft.Azure.Management.Dns.Fluent/1.22.2": {
+        "dependencies": {
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.22.2",
+          "Microsoft.Rest.ClientRuntime": "2.3.18",
+          "Microsoft.Rest.ClientRuntime.Azure": "3.3.18",
+          "NETStandard.Library": "2.0.3",
+          "System.Net.Http": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.Dns.Fluent.dll": {
+            "assemblyVersion": "1.0.0.60",
+            "fileVersion": "1.0.0.60"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.Dns.Fluent.dll": {}
+        }
+      },
+      "Microsoft.Azure.Management.EventHub.Fluent/1.22.2": {
+        "dependencies": {
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.22.2",
+          "Microsoft.Azure.Management.Storage.Fluent": "1.22.2",
+          "Microsoft.Rest.ClientRuntime": "2.3.18",
+          "Microsoft.Rest.ClientRuntime.Azure": "3.3.18",
+          "NETStandard.Library": "2.0.3",
+          "System.Net.Http": "4.3.0",
+          "WindowsAzure.Storage": "8.1.4"
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.EventHub.Fluent.dll": {
+            "assemblyVersion": "1.0.0.60",
+            "fileVersion": "1.0.0.60"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.EventHub.Fluent.dll": {}
+        }
+      },
+      "Microsoft.Azure.Management.Fluent/1.22.2": {
+        "dependencies": {
+          "Microsoft.Azure.Management.AppService.Fluent": "1.22.2",
+          "Microsoft.Azure.Management.Batch.Fluent": "1.22.2",
+          "Microsoft.Azure.Management.BatchAI.Fluent": "1.22.2",
+          "Microsoft.Azure.Management.Cdn.Fluent": "1.22.2",
+          "Microsoft.Azure.Management.Compute.Fluent": "1.22.2",
+          "Microsoft.Azure.Management.ContainerInstance.Fluent": "1.22.2",
+          "Microsoft.Azure.Management.ContainerRegistry.Fluent": "1.22.2",
+          "Microsoft.Azure.Management.ContainerService.Fluent": "1.22.2",
+          "Microsoft.Azure.Management.CosmosDB.Fluent": "1.22.2",
+          "Microsoft.Azure.Management.Dns.Fluent": "1.22.2",
+          "Microsoft.Azure.Management.EventHub.Fluent": "1.22.2",
+          "Microsoft.Azure.Management.Graph.RBAC.Fluent": "1.22.2",
+          "Microsoft.Azure.Management.KeyVault.Fluent": "1.22.2",
+          "Microsoft.Azure.Management.Locks.Fluent": "1.22.2",
+          "Microsoft.Azure.Management.Monitor.Fluent": "1.22.2",
+          "Microsoft.Azure.Management.Msi.Fluent": "1.22.2",
+          "Microsoft.Azure.Management.Network.Fluent": "1.22.2",
+          "Microsoft.Azure.Management.Redis.Fluent": "1.22.2",
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.22.2",
+          "Microsoft.Azure.Management.Search.Fluent": "1.22.2",
+          "Microsoft.Azure.Management.ServiceBus.Fluent": "1.22.2",
+          "Microsoft.Azure.Management.Sql.Fluent": "1.22.2",
+          "Microsoft.Azure.Management.Storage.Fluent": "1.22.2",
+          "Microsoft.Azure.Management.TrafficManager.Fluent": "1.22.2",
+          "Microsoft.Rest.ClientRuntime": "2.3.18",
+          "Microsoft.Rest.ClientRuntime.Azure": "3.3.18",
+          "NETStandard.Library": "2.0.3",
+          "System.Net.Http": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.Fluent.dll": {
+            "assemblyVersion": "1.0.0.60",
+            "fileVersion": "1.0.0.60"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.Fluent.dll": {}
+        }
+      },
+      "Microsoft.Azure.Management.Graph.RBAC.Fluent/1.22.2": {
+        "dependencies": {
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.22.2",
+          "Microsoft.Rest.ClientRuntime": "2.3.18",
+          "Microsoft.Rest.ClientRuntime.Azure": "3.3.18",
+          "NETStandard.Library": "2.0.3",
+          "System.Net.Http": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.Graph.RBAC.Fluent.dll": {
+            "assemblyVersion": "1.0.0.60",
+            "fileVersion": "1.0.0.60"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.Graph.RBAC.Fluent.dll": {}
+        }
+      },
+      "Microsoft.Azure.Management.KeyVault.Fluent/1.22.2": {
+        "dependencies": {
+          "Microsoft.Azure.KeyVault": "3.0.1",
+          "Microsoft.Azure.Management.Graph.RBAC.Fluent": "1.22.2",
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.22.2",
+          "Microsoft.Rest.ClientRuntime": "2.3.18",
+          "Microsoft.Rest.ClientRuntime.Azure": "3.3.18",
+          "NETStandard.Library": "2.0.3",
+          "System.Net.Http": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.KeyVault.Fluent.dll": {
+            "assemblyVersion": "1.0.0.60",
+            "fileVersion": "1.0.0.60"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.KeyVault.Fluent.dll": {}
+        }
+      },
+      "Microsoft.Azure.Management.Locks.Fluent/1.22.2": {
+        "dependencies": {
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.22.2",
+          "Microsoft.Rest.ClientRuntime": "2.3.18",
+          "Microsoft.Rest.ClientRuntime.Azure": "3.3.18",
+          "NETStandard.Library": "2.0.3",
+          "System.Net.Http": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.Locks.Fluent.dll": {
+            "assemblyVersion": "1.0.0.60",
+            "fileVersion": "1.0.0.60"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.Locks.Fluent.dll": {}
+        }
+      },
+      "Microsoft.Azure.Management.Monitor.Fluent/1.22.2": {
+        "dependencies": {
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.22.2",
+          "Microsoft.Rest.ClientRuntime": "2.3.18",
+          "Microsoft.Rest.ClientRuntime.Azure": "3.3.18",
+          "NETStandard.Library": "2.0.3",
+          "System.Net.Http": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.Monitor.Fluent.dll": {
+            "assemblyVersion": "1.0.0.60",
+            "fileVersion": "1.0.0.60"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.Monitor.Fluent.dll": {}
+        }
+      },
+      "Microsoft.Azure.Management.Msi.Fluent/1.22.2": {
+        "dependencies": {
+          "Microsoft.Azure.Management.Graph.RBAC.Fluent": "1.22.2",
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.22.2",
+          "Microsoft.Rest.ClientRuntime": "2.3.18",
+          "Microsoft.Rest.ClientRuntime.Azure": "3.3.18",
+          "NETStandard.Library": "2.0.3",
+          "System.Net.Http": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.Msi.Fluent.dll": {
+            "assemblyVersion": "1.0.0.60",
+            "fileVersion": "1.0.0.60"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.Msi.Fluent.dll": {}
+        }
+      },
+      "Microsoft.Azure.Management.Network.Fluent/1.22.2": {
+        "dependencies": {
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.22.2",
+          "Microsoft.Rest.ClientRuntime": "2.3.18",
+          "Microsoft.Rest.ClientRuntime.Azure": "3.3.18",
+          "NETStandard.Library": "2.0.3",
+          "System.Net.Http": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.Network.Fluent.dll": {
+            "assemblyVersion": "1.0.0.60",
+            "fileVersion": "1.0.0.60"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.Network.Fluent.dll": {}
+        }
+      },
+      "Microsoft.Azure.Management.Redis.Fluent/1.22.2": {
+        "dependencies": {
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.22.2",
+          "Microsoft.Rest.ClientRuntime": "2.3.18",
+          "Microsoft.Rest.ClientRuntime.Azure": "3.3.18",
+          "NETStandard.Library": "2.0.3",
+          "System.Net.Http": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.Redis.Fluent.dll": {
+            "assemblyVersion": "1.0.0.60",
+            "fileVersion": "1.0.0.60"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.Redis.Fluent.dll": {}
+        }
+      },
+      "Microsoft.Azure.Management.ResourceManager.Fluent/1.22.2": {
+        "dependencies": {
+          "Microsoft.Rest.ClientRuntime": "2.3.18",
+          "Microsoft.Rest.ClientRuntime.Azure": "3.3.18",
+          "Microsoft.Rest.ClientRuntime.Azure.Authentication": "2.3.6",
+          "NETStandard.Library": "2.0.3",
+          "System.Net.Http": "4.3.0",
+          "System.Net.NetworkInformation": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.ResourceManager.Fluent.dll": {
+            "assemblyVersion": "1.0.0.60",
+            "fileVersion": "1.0.0.60"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.ResourceManager.Fluent.dll": {}
+        }
+      },
+      "Microsoft.Azure.Management.Search.Fluent/1.22.2": {
+        "dependencies": {
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.22.2",
+          "Microsoft.Rest.ClientRuntime": "2.3.18",
+          "Microsoft.Rest.ClientRuntime.Azure": "3.3.18",
+          "NETStandard.Library": "2.0.3",
+          "System.Net.Http": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.Search.Fluent.dll": {
+            "assemblyVersion": "1.0.0.60",
+            "fileVersion": "1.0.0.60"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.Search.Fluent.dll": {}
+        }
+      },
+      "Microsoft.Azure.Management.ServiceBus.Fluent/1.22.2": {
+        "dependencies": {
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.22.2",
+          "Microsoft.Rest.ClientRuntime": "2.3.18",
+          "Microsoft.Rest.ClientRuntime.Azure": "3.3.18",
+          "NETStandard.Library": "2.0.3",
+          "System.Net.Http": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.ServiceBus.Fluent.dll": {
+            "assemblyVersion": "1.0.0.60",
+            "fileVersion": "1.0.0.60"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.ServiceBus.Fluent.dll": {}
+        }
+      },
+      "Microsoft.Azure.Management.Sql.Fluent/1.22.2": {
+        "dependencies": {
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.22.2",
+          "Microsoft.Azure.Management.Storage.Fluent": "1.22.2",
+          "Microsoft.Rest.ClientRuntime": "2.3.18",
+          "Microsoft.Rest.ClientRuntime.Azure": "3.3.18",
+          "NETStandard.Library": "2.0.3",
+          "System.Net.Http": "4.3.0",
+          "WindowsAzure.Storage": "8.1.4"
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.Sql.Fluent.dll": {
+            "assemblyVersion": "1.0.0.60",
+            "fileVersion": "1.0.0.60"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.Sql.Fluent.dll": {}
+        }
+      },
+      "Microsoft.Azure.Management.Storage.Fluent/1.22.2": {
+        "dependencies": {
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.22.2",
+          "Microsoft.Rest.ClientRuntime": "2.3.18",
+          "Microsoft.Rest.ClientRuntime.Azure": "3.3.18",
+          "NETStandard.Library": "2.0.3",
+          "System.Net.Http": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.Storage.Fluent.dll": {
+            "assemblyVersion": "1.0.0.60",
+            "fileVersion": "1.0.0.60"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.Storage.Fluent.dll": {}
+        }
+      },
+      "Microsoft.Azure.Management.TrafficManager.Fluent/1.22.2": {
+        "dependencies": {
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.22.2",
+          "Microsoft.Rest.ClientRuntime": "2.3.18",
+          "Microsoft.Rest.ClientRuntime.Azure": "3.3.18",
+          "NETStandard.Library": "2.0.3",
+          "System.Net.Http": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.TrafficManager.Fluent.dll": {
+            "assemblyVersion": "1.0.0.60",
+            "fileVersion": "1.0.0.60"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.TrafficManager.Fluent.dll": {}
+        }
+      },
+      "Microsoft.Azure.Services.AppAuthentication/1.0.1": {
+        "dependencies": {
+          "Microsoft.IdentityModel.Clients.ActiveDirectory": "3.14.2",
+          "NETStandard.Library": "2.0.3",
+          "System.Diagnostics.Process": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Services.AppAuthentication.dll": {
+            "assemblyVersion": "1.0.1.0",
+            "fileVersion": "1.0.1.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.4/Microsoft.Azure.Services.AppAuthentication.dll": {}
         }
       },
       "Microsoft.CodeAnalysis.CSharp.Workspaces/2.8.0": {
@@ -69,6 +673,210 @@
         },
         "compile": {
           "lib/netstandard1.3/Microsoft.CodeAnalysis.Workspaces.dll": {}
+        }
+      },
+      "Microsoft.Data.Edm/5.8.2": {
+        "runtime": {
+          "lib/netstandard1.1/Microsoft.Data.Edm.dll": {
+            "assemblyVersion": "5.8.1.0",
+            "fileVersion": "5.8.1.62767"
+          }
+        },
+        "resources": {
+          "lib/netstandard1.1/de/Microsoft.Data.Edm.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netstandard1.1/es/Microsoft.Data.Edm.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netstandard1.1/fr/Microsoft.Data.Edm.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netstandard1.1/it/Microsoft.Data.Edm.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netstandard1.1/ja/Microsoft.Data.Edm.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netstandard1.1/ko/Microsoft.Data.Edm.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netstandard1.1/ru/Microsoft.Data.Edm.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netstandard1.1/zh-Hans/Microsoft.Data.Edm.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netstandard1.1/zh-Hant/Microsoft.Data.Edm.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.1/Microsoft.Data.Edm.dll": {}
+        }
+      },
+      "Microsoft.Data.OData/5.8.2": {
+        "dependencies": {
+          "Microsoft.Data.Edm": "5.8.2",
+          "System.Spatial": "5.8.2"
+        },
+        "runtime": {
+          "lib/netstandard1.1/Microsoft.Data.OData.dll": {
+            "assemblyVersion": "5.8.1.0",
+            "fileVersion": "5.8.1.62767"
+          }
+        },
+        "resources": {
+          "lib/netstandard1.1/de/Microsoft.Data.OData.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netstandard1.1/es/Microsoft.Data.OData.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netstandard1.1/fr/Microsoft.Data.OData.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netstandard1.1/it/Microsoft.Data.OData.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netstandard1.1/ja/Microsoft.Data.OData.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netstandard1.1/ko/Microsoft.Data.OData.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netstandard1.1/ru/Microsoft.Data.OData.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netstandard1.1/zh-Hans/Microsoft.Data.OData.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netstandard1.1/zh-Hant/Microsoft.Data.OData.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.1/Microsoft.Data.OData.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.AzureKeyVault/2.0.2": {
+        "dependencies": {
+          "Microsoft.Azure.KeyVault": "3.0.1",
+          "Microsoft.Extensions.Configuration": "2.2.0",
+          "Microsoft.Extensions.Configuration.FileExtensions": "2.2.0",
+          "Microsoft.IdentityModel.Clients.ActiveDirectory": "3.14.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.AzureKeyVault.dll": {
+            "assemblyVersion": "2.0.2.0",
+            "fileVersion": "2.0.2.18114"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.AzureKeyVault.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.EnvironmentVariables/2.2.4": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "2.2.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.EnvironmentVariables.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.19081"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.EnvironmentVariables.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Logging.AzureAppServices/2.2.5": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.EnvironmentVariables": "2.2.4",
+          "Microsoft.Extensions.Configuration.Json": "2.2.0",
+          "Microsoft.Extensions.Logging": "2.2.0",
+          "Microsoft.Extensions.Logging.Abstractions": "2.2.0",
+          "Microsoft.Extensions.Logging.Configuration": "2.2.0",
+          "System.ValueTuple": "4.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.AzureAppServices.dll": {
+            "assemblyVersion": "2.2.5.0",
+            "fileVersion": "2.2.5.19109"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.AzureAppServices.dll": {}
+        }
+      },
+      "Microsoft.IdentityModel.Clients.ActiveDirectory/3.14.2": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3",
+          "System.Runtime.Serialization.Json": "4.0.2",
+          "System.Runtime.Serialization.Primitives": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll": {
+            "assemblyVersion": "3.14.2.11",
+            "fileVersion": "3.14.40721.918"
+          },
+          "lib/netstandard1.3/Microsoft.IdentityModel.Clients.ActiveDirectory.dll": {
+            "assemblyVersion": "3.14.2.11",
+            "fileVersion": "3.14.40721.918"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.3/Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll": {},
+          "lib/netstandard1.3/Microsoft.IdentityModel.Clients.ActiveDirectory.dll": {}
+        }
+      },
+      "Microsoft.Rest.ClientRuntime/2.3.18": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3",
+          "Newtonsoft.Json": "11.0.2"
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Rest.ClientRuntime.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.3.18.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.4/Microsoft.Rest.ClientRuntime.dll": {}
+        }
+      },
+      "Microsoft.Rest.ClientRuntime.Azure/3.3.18": {
+        "dependencies": {
+          "Microsoft.Rest.ClientRuntime": "2.3.18",
+          "NETStandard.Library": "2.0.3",
+          "Newtonsoft.Json": "11.0.2"
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Rest.ClientRuntime.Azure.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.3.18.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.4/Microsoft.Rest.ClientRuntime.Azure.dll": {}
+        }
+      },
+      "Microsoft.Rest.ClientRuntime.Azure.Authentication/2.3.6": {
+        "dependencies": {
+          "Microsoft.IdentityModel.Clients.ActiveDirectory": "3.14.2",
+          "Microsoft.IdentityModel.Tokens": "5.3.0",
+          "Microsoft.Rest.ClientRuntime": "2.3.18",
+          "NETStandard.Library": "2.0.3",
+          "Newtonsoft.Json": "11.0.2"
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Rest.ClientRuntime.Azure.Authentication.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.3.6.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.4/Microsoft.Rest.ClientRuntime.Azure.Authentication.dll": {}
         }
       },
       "Microsoft.VisualStudio.Web.CodeGeneration/2.2.3": {
@@ -189,6 +997,13 @@
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll": {}
+        }
+      },
+      "Microsoft.Win32.Primitives/4.3.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.2.0",
+          "Microsoft.NETCore.Targets": "2.0.0",
+          "System.Runtime": "4.3.0"
         }
       },
       "NuGet.Frameworks/4.7.0": {
@@ -328,6 +1143,45 @@
           "lib/netstandard1.0/System.Composition.TypedParts.dll": {}
         }
       },
+      "System.Diagnostics.Process/4.3.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.2.0",
+          "Microsoft.Win32.Primitives": "4.3.0",
+          "Microsoft.Win32.Registry": "4.5.0",
+          "System.Collections": "4.3.0",
+          "System.Diagnostics.Debug": "4.3.0",
+          "System.Globalization": "4.3.0",
+          "System.IO": "4.3.0",
+          "System.IO.FileSystem": "4.3.0",
+          "System.IO.FileSystem.Primitives": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Runtime.Handles": "4.3.0",
+          "System.Runtime.InteropServices": "4.3.0",
+          "System.Text.Encoding": "4.3.0",
+          "System.Text.Encoding.Extensions": "4.3.0",
+          "System.Threading": "4.3.0",
+          "System.Threading.Tasks": "4.3.0",
+          "System.Threading.Thread": "4.3.0",
+          "System.Threading.ThreadPool": "4.3.0",
+          "runtime.native.System": "4.3.0"
+        },
+        "runtimeTargets": {
+          "runtime/linux/lib/_._": {
+            "rid": "linux",
+            "assetType": "runtime"
+          },
+          "runtime/osx/lib/_._": {
+            "rid": "osx",
+            "assetType": "runtime"
+          },
+          "runtime/win/lib/_._": {
+            "rid": "win",
+            "assetType": "runtime"
+          }
+        }
+      },
       "System.Linq.Parallel/4.3.0": {
         "dependencies": {
           "System.Collections": "4.3.0",
@@ -340,6 +1194,146 @@
           "System.Runtime.Extensions": "4.3.0",
           "System.Threading": "4.3.0",
           "System.Threading.Tasks": "4.3.0"
+        }
+      },
+      "System.Net.NetworkInformation/4.3.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.2.0",
+          "Microsoft.Win32.Primitives": "4.3.0",
+          "System.Collections": "4.3.0",
+          "System.Diagnostics.Tracing": "4.3.0",
+          "System.Globalization": "4.3.0",
+          "System.IO": "4.3.0",
+          "System.IO.FileSystem": "4.3.0",
+          "System.IO.FileSystem.Primitives": "4.3.0",
+          "System.Linq": "4.3.0",
+          "System.Net.Primitives": "4.3.0",
+          "System.Net.Sockets": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Runtime.Handles": "4.3.0",
+          "System.Runtime.InteropServices": "4.3.0",
+          "System.Security.Principal.Windows": "4.5.0",
+          "System.Threading": "4.3.0",
+          "System.Threading.Overlapped": "4.3.0",
+          "System.Threading.Tasks": "4.3.0",
+          "System.Threading.Thread": "4.3.0",
+          "System.Threading.ThreadPool": "4.3.0",
+          "runtime.native.System": "4.3.0"
+        },
+        "runtimeTargets": {
+          "runtime/linux/lib/_._": {
+            "rid": "linux",
+            "assetType": "runtime"
+          },
+          "runtime/osx/lib/_._": {
+            "rid": "osx",
+            "assetType": "runtime"
+          },
+          "runtime/win/lib/_._": {
+            "rid": "win",
+            "assetType": "runtime"
+          }
+        }
+      },
+      "System.Net.Sockets/4.3.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.2.0",
+          "Microsoft.NETCore.Targets": "2.0.0",
+          "System.IO": "4.3.0",
+          "System.Net.Primitives": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Threading.Tasks": "4.3.0"
+        }
+      },
+      "System.Runtime.Serialization.Json/4.0.2": {
+        "dependencies": {
+          "System.IO": "4.3.0",
+          "System.Private.DataContractSerialization": "4.3.0",
+          "System.Runtime": "4.3.0"
+        }
+      },
+      "System.Spatial/5.8.2": {
+        "runtime": {
+          "lib/netstandard1.1/System.Spatial.dll": {
+            "assemblyVersion": "5.8.1.0",
+            "fileVersion": "5.8.1.62767"
+          }
+        },
+        "resources": {
+          "lib/netstandard1.1/de/System.Spatial.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netstandard1.1/es/System.Spatial.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netstandard1.1/fr/System.Spatial.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netstandard1.1/it/System.Spatial.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netstandard1.1/ja/System.Spatial.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netstandard1.1/ko/System.Spatial.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netstandard1.1/ru/System.Spatial.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netstandard1.1/zh-Hans/System.Spatial.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netstandard1.1/zh-Hant/System.Spatial.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.1/System.Spatial.dll": {}
+        }
+      },
+      "System.Threading.Overlapped/4.3.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.2.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Handles": "4.3.0"
+        },
+        "runtimeTargets": {
+          "runtime/unix/lib/_._": {
+            "rid": "unix",
+            "assetType": "runtime"
+          },
+          "runtime/win/lib/_._": {
+            "rid": "win",
+            "assetType": "runtime"
+          }
+        }
+      },
+      "System.Threading.ThreadPool/4.3.0": {
+        "dependencies": {
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Handles": "4.3.0"
+        }
+      },
+      "System.ValueTuple/4.5.0": {},
+      "WindowsAzure.Storage/8.1.4": {
+        "dependencies": {
+          "Microsoft.Data.OData": "5.8.2",
+          "NETStandard.Library": "2.0.3",
+          "Newtonsoft.Json": "11.0.2",
+          "System.Spatial": "5.8.2"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {
+            "assemblyVersion": "8.1.4.0",
+            "fileVersion": "8.1.4.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -363,7 +1357,7 @@
           "Microsoft.AspNetCore.Server.Kestrel": "2.2.0",
           "Microsoft.AspNetCore.Server.Kestrel.Https": "2.2.0",
           "Microsoft.Extensions.Configuration.CommandLine": "2.2.0",
-          "Microsoft.Extensions.Configuration.EnvironmentVariables": "2.2.0",
+          "Microsoft.Extensions.Configuration.EnvironmentVariables": "2.2.4",
           "Microsoft.Extensions.Configuration.FileExtensions": "2.2.0",
           "Microsoft.Extensions.Configuration.Json": "2.2.0",
           "Microsoft.Extensions.Configuration.UserSecrets": "2.2.0",
@@ -504,7 +1498,7 @@
           "Microsoft.Extensions.Configuration.Abstractions": "2.2.0",
           "Microsoft.Extensions.Configuration.Binder": "2.2.0",
           "Microsoft.Extensions.Configuration.CommandLine": "2.2.0",
-          "Microsoft.Extensions.Configuration.EnvironmentVariables": "2.2.0",
+          "Microsoft.Extensions.Configuration.EnvironmentVariables": "2.2.4",
           "Microsoft.Extensions.Configuration.FileExtensions": "2.2.0",
           "Microsoft.Extensions.Configuration.Ini": "2.2.0",
           "Microsoft.Extensions.Configuration.Json": "2.2.0",
@@ -834,7 +1828,7 @@
           "Microsoft.AspNetCore.Http": "2.2.0",
           "Microsoft.AspNetCore.Http.Extensions": "2.2.0",
           "Microsoft.Extensions.Configuration": "2.2.0",
-          "Microsoft.Extensions.Configuration.EnvironmentVariables": "2.2.0",
+          "Microsoft.Extensions.Configuration.EnvironmentVariables": "2.2.4",
           "Microsoft.Extensions.Configuration.FileExtensions": "2.2.0",
           "Microsoft.Extensions.DependencyInjection": "2.2.0",
           "Microsoft.Extensions.FileProviders.Physical": "2.2.0",
@@ -1628,7 +2622,7 @@
           "System.Threading.Tasks": "4.3.0",
           "System.Threading.Tasks.Parallel": "4.3.0",
           "System.Threading.Thread": "4.3.0",
-          "System.ValueTuple": "4.3.0",
+          "System.ValueTuple": "4.5.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XDocument": "4.3.0",
           "System.Xml.XPath.XDocument": "4.3.0",
@@ -1813,15 +2807,6 @@
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.Configuration.CommandLine.dll": {}
-        },
-        "compileOnly": true
-      },
-      "Microsoft.Extensions.Configuration.EnvironmentVariables/2.2.0": {
-        "dependencies": {
-          "Microsoft.Extensions.Configuration": "2.2.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.Configuration.EnvironmentVariables.dll": {}
         },
         "compileOnly": true
       },
@@ -3426,14 +4411,6 @@
         },
         "compileOnly": true
       },
-      "System.ValueTuple/4.3.0": {
-        "dependencies": {
-          "System.Collections": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0"
-        },
-        "compileOnly": true
-      },
       "System.Xml.ReaderWriter/4.3.0": {
         "dependencies": {
           "System.Collections": "4.3.0",
@@ -3544,6 +4521,223 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Microsoft.AspNetCore.AzureAppServices.HostingStartup/2.2.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tCSKgBt6OQ6JKUhB8xSc8+q404vQc9Vclvp1me8t2QEEPPLkjkUQrI11dE5v/8ODUlxhKtKYTrO2+sFL68FOhA==",
+      "path": "microsoft.aspnetcore.azureappservices.hostingstartup/2.2.5",
+      "hashPath": "microsoft.aspnetcore.azureappservices.hostingstartup.2.2.5.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.AzureAppServicesIntegration/2.2.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WngdrV/8vlU7KBWBL3vfcRze7GdfjpdR2YDiqOhY2xtYPn8nl34PasLQ+h6c7jHPao+kiBqjVFL0FJo/X46wiA==",
+      "path": "microsoft.aspnetcore.azureappservicesintegration/2.2.5",
+      "hashPath": "microsoft.aspnetcore.azureappservicesintegration.2.2.5.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.AzureKeyVault.HostingStartup/2.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bYPng59AGsjOF3UMue6UreXav4DEWHFJouiD2hQs54xwFOneZd3Bsxk60AGoF/HSYo/awbc8oLR+HW9ISj63fw==",
+      "path": "microsoft.aspnetcore.azurekeyvault.hostingstartup/2.0.4",
+      "hashPath": "microsoft.aspnetcore.azurekeyvault.hostingstartup.2.0.4.nupkg.sha512"
+    },
+    "Microsoft.Azure.KeyVault/3.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9//DmsIsjbKQG4USO8UnjQZOmbjyxNtESGh5xI/cm3Dq10rqf3Zik+G+GFaFyk0RALUvCRZVGoQIazCUw9SvEA==",
+      "path": "microsoft.azure.keyvault/3.0.1",
+      "hashPath": "microsoft.azure.keyvault.3.0.1.nupkg.sha512"
+    },
+    "Microsoft.Azure.KeyVault.WebKey/3.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8pd4cCK+1lWaEkKgiBK43GyQZW4m1rdr3qZpTJcf06O0nhnK2FDT8dR+aknr8UECzigK4fdKRaQjM3olOroWJg==",
+      "path": "microsoft.azure.keyvault.webkey/3.0.1",
+      "hashPath": "microsoft.azure.keyvault.webkey.3.0.1.nupkg.sha512"
+    },
+    "Microsoft.Azure.Management.AppService.Fluent/1.22.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-n7zdvZyY6ScAUNzC2nS59pCTuKwqOebzliBhmtwkHwAh/Wedn8P8uMQ+VUjG32VjVbcO72OhmuMmAbm4P1fRyw==",
+      "path": "microsoft.azure.management.appservice.fluent/1.22.2",
+      "hashPath": "microsoft.azure.management.appservice.fluent.1.22.2.nupkg.sha512"
+    },
+    "Microsoft.Azure.Management.Batch.Fluent/1.22.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CfGZsBvpk9zW3xdNymxxfTrEjKx18gRoX2gPlpFLGXh9Y8lXcx5Jusz27E6rx4xng7GrazK4AWAYu6NmgOr5Kw==",
+      "path": "microsoft.azure.management.batch.fluent/1.22.2",
+      "hashPath": "microsoft.azure.management.batch.fluent.1.22.2.nupkg.sha512"
+    },
+    "Microsoft.Azure.Management.BatchAI.Fluent/1.22.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NKeu3+C4Wfv4MmmnP812kO0S9N+/+bBa4IvaLUUngAMKfzSQji0LXviBcLl+Z9y8rPVEO2bJUlEo9gp8rtPIHA==",
+      "path": "microsoft.azure.management.batchai.fluent/1.22.2",
+      "hashPath": "microsoft.azure.management.batchai.fluent.1.22.2.nupkg.sha512"
+    },
+    "Microsoft.Azure.Management.Cdn.Fluent/1.22.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-la0D0vQPuvuNflqWucYbSHvLMevCpDUILmEXAXtCOnatBkx0CwDIp5ljQXsRHzotHX7attazuhHfTd2LOrb+FQ==",
+      "path": "microsoft.azure.management.cdn.fluent/1.22.2",
+      "hashPath": "microsoft.azure.management.cdn.fluent.1.22.2.nupkg.sha512"
+    },
+    "Microsoft.Azure.Management.Compute.Fluent/1.22.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xCHbtE5+uc9jtTxWG4vTQcAoSFT5+fgyanHIIa4ZRu8UqAVtcpawm0s6cymNBLbvFUk4tPNhHq6vofe53XSmpA==",
+      "path": "microsoft.azure.management.compute.fluent/1.22.2",
+      "hashPath": "microsoft.azure.management.compute.fluent.1.22.2.nupkg.sha512"
+    },
+    "Microsoft.Azure.Management.ContainerInstance.Fluent/1.22.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-K7KjSNam484+cK7n6LzXLXGrmIirg9grgbptz18r22uV+SmYRRR2ijmpPkqRk8TfG3Vh1P2EnK5NCfaI6dFZTA==",
+      "path": "microsoft.azure.management.containerinstance.fluent/1.22.2",
+      "hashPath": "microsoft.azure.management.containerinstance.fluent.1.22.2.nupkg.sha512"
+    },
+    "Microsoft.Azure.Management.ContainerRegistry.Fluent/1.22.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zjHd/F+335To+acvcJTSWrnNmBf0kIRzF91w5nlV+T26Pe+na9X5OvFWszT+PtusrZgsG/C6j/8oxhvwBCc6xw==",
+      "path": "microsoft.azure.management.containerregistry.fluent/1.22.2",
+      "hashPath": "microsoft.azure.management.containerregistry.fluent.1.22.2.nupkg.sha512"
+    },
+    "Microsoft.Azure.Management.ContainerService.Fluent/1.22.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fm5qHOWk6wEJCnqyws8t2lB6a8DTt70wj34piP5dEmnZiiFe3qXDesPMyjuPT5r4/V3W/u+iqztzOeh0Htassw==",
+      "path": "microsoft.azure.management.containerservice.fluent/1.22.2",
+      "hashPath": "microsoft.azure.management.containerservice.fluent.1.22.2.nupkg.sha512"
+    },
+    "Microsoft.Azure.Management.CosmosDB.Fluent/1.22.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AY5BXq9Hm+33y1TDz/cVmACAXeRqT4qXutnMJKU50v/sUtTcVSDTd29lZGsI4Uyprb5ZD80EZ/0pNCo+ne5enA==",
+      "path": "microsoft.azure.management.cosmosdb.fluent/1.22.2",
+      "hashPath": "microsoft.azure.management.cosmosdb.fluent.1.22.2.nupkg.sha512"
+    },
+    "Microsoft.Azure.Management.Dns.Fluent/1.22.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2YGv3kpIKewHOvoAqRPnVlxQd3JZDMi9q1YKGLjlibwx0bU9QpppZQupK0c/I2qPCo6kLCGbQ40uNDbSomhPuw==",
+      "path": "microsoft.azure.management.dns.fluent/1.22.2",
+      "hashPath": "microsoft.azure.management.dns.fluent.1.22.2.nupkg.sha512"
+    },
+    "Microsoft.Azure.Management.EventHub.Fluent/1.22.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZB5fP7eNbCDbI5m/kKLERdVAeJcwNVlTwwL1YGAzxUljzbn8U4Omfck0frv8RoS7bNKwF5z5fRtYI/Y7WtLpow==",
+      "path": "microsoft.azure.management.eventhub.fluent/1.22.2",
+      "hashPath": "microsoft.azure.management.eventhub.fluent.1.22.2.nupkg.sha512"
+    },
+    "Microsoft.Azure.Management.Fluent/1.22.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TkResa4y/IjQK72/YuRsbgiAvm1l76SPIWfI/pU45OH/+zWqYU+LsRXgmeDsM0/Kl8UDybU8yQkCfsvyQkHq+g==",
+      "path": "microsoft.azure.management.fluent/1.22.2",
+      "hashPath": "microsoft.azure.management.fluent.1.22.2.nupkg.sha512"
+    },
+    "Microsoft.Azure.Management.Graph.RBAC.Fluent/1.22.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kJrDg+wVpFRjGO8LWJAyFe5DPp4hRIW3HAvNb0zY3glvFDFCOHQ2OMfyOyLIjD8Htk7VlvDNIQCmFKa2a0imMA==",
+      "path": "microsoft.azure.management.graph.rbac.fluent/1.22.2",
+      "hashPath": "microsoft.azure.management.graph.rbac.fluent.1.22.2.nupkg.sha512"
+    },
+    "Microsoft.Azure.Management.KeyVault.Fluent/1.22.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-DjLndBPb9CLXkaIVIiZkCCXjv3zls4twew2+vtQVjqPjeNlLs/4iHw/iAyhyPR5eh8sdgTsoa9YtMNgEUYsRCg==",
+      "path": "microsoft.azure.management.keyvault.fluent/1.22.2",
+      "hashPath": "microsoft.azure.management.keyvault.fluent.1.22.2.nupkg.sha512"
+    },
+    "Microsoft.Azure.Management.Locks.Fluent/1.22.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OBwmxuzyTgyrsRUzOVYhTxv35cqUnCqy1yjdfzcDtMpl+WgPZdkaNOf6fvHxp0Q7sgRsn4rlw8ZKeKOf37thNQ==",
+      "path": "microsoft.azure.management.locks.fluent/1.22.2",
+      "hashPath": "microsoft.azure.management.locks.fluent.1.22.2.nupkg.sha512"
+    },
+    "Microsoft.Azure.Management.Monitor.Fluent/1.22.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Zim5inlNOR0GNgLzP1lSy3FXh5lClS8XtihUkzO7ze+nPdOnfhtrlyoKzbPWrYQyni1tOv2patUpBcd0hOBiqQ==",
+      "path": "microsoft.azure.management.monitor.fluent/1.22.2",
+      "hashPath": "microsoft.azure.management.monitor.fluent.1.22.2.nupkg.sha512"
+    },
+    "Microsoft.Azure.Management.Msi.Fluent/1.22.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8j1DQni2vHKaW8ELBvGQ9alPxkIOligJzwYEGBvL9lBmVp/ApDdOdX5N7gt38xgJwnpdq7u+ardst91gIY7kBg==",
+      "path": "microsoft.azure.management.msi.fluent/1.22.2",
+      "hashPath": "microsoft.azure.management.msi.fluent.1.22.2.nupkg.sha512"
+    },
+    "Microsoft.Azure.Management.Network.Fluent/1.22.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/7G8dAMqLF736Z2FzSco5Mj4lZ+ahIf+9ralBrZ3dE4GpCe9tYAn7COoiOMlccmTZktvh7ETmUtspLXx54oh+A==",
+      "path": "microsoft.azure.management.network.fluent/1.22.2",
+      "hashPath": "microsoft.azure.management.network.fluent.1.22.2.nupkg.sha512"
+    },
+    "Microsoft.Azure.Management.Redis.Fluent/1.22.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-s8dAZwC9P2y4j2SmH1ntet7JxEwoCzS9ZYAL3JltppoXIbdblpO5XwHbg8cdBSr+YX/hxL58VpjrK2YRDV3dhQ==",
+      "path": "microsoft.azure.management.redis.fluent/1.22.2",
+      "hashPath": "microsoft.azure.management.redis.fluent.1.22.2.nupkg.sha512"
+    },
+    "Microsoft.Azure.Management.ResourceManager.Fluent/1.22.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FMzZq4+Bfp/Jfo0woYmq9KxMj4+G3aOruHSEM58q9p4DC3HC4c63k3kmuVZp7objjdKNRcGGeOXinUfhTWTH2Q==",
+      "path": "microsoft.azure.management.resourcemanager.fluent/1.22.2",
+      "hashPath": "microsoft.azure.management.resourcemanager.fluent.1.22.2.nupkg.sha512"
+    },
+    "Microsoft.Azure.Management.Search.Fluent/1.22.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tlHRtYqO8n9rXjYpvhjOyChrEJHACheVM+11jJgLHkeCJ/BMry8VDpAQE9vubbYkYZNpuWlUQdr87FGdPw9SIg==",
+      "path": "microsoft.azure.management.search.fluent/1.22.2",
+      "hashPath": "microsoft.azure.management.search.fluent.1.22.2.nupkg.sha512"
+    },
+    "Microsoft.Azure.Management.ServiceBus.Fluent/1.22.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-95oC+TyjUyfOvZX0xRyazfeaXJg5NHLWm++Tfu0I0CDMa/quXu3pVNZTbPZHii0F4p4lHmKj0tYM2gCFJjhKRg==",
+      "path": "microsoft.azure.management.servicebus.fluent/1.22.2",
+      "hashPath": "microsoft.azure.management.servicebus.fluent.1.22.2.nupkg.sha512"
+    },
+    "Microsoft.Azure.Management.Sql.Fluent/1.22.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pybisxHjpDTrpsS3w0WtTn5/1xmzkllmy5RbQCp5dP9qvfN/WJiBVb9UPgV1/kK1lyNiyWnkDe++b5pI7h4wlQ==",
+      "path": "microsoft.azure.management.sql.fluent/1.22.2",
+      "hashPath": "microsoft.azure.management.sql.fluent.1.22.2.nupkg.sha512"
+    },
+    "Microsoft.Azure.Management.Storage.Fluent/1.22.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+l2pjwv85NEt4k62PE9SSVVXCI7X5dtxOe4n5EEvrR4zPUua1O2nq90auoRH0P7kZO5Z2uk/DHaENH9l+T3gOg==",
+      "path": "microsoft.azure.management.storage.fluent/1.22.2",
+      "hashPath": "microsoft.azure.management.storage.fluent.1.22.2.nupkg.sha512"
+    },
+    "Microsoft.Azure.Management.TrafficManager.Fluent/1.22.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-raoF5aPR/GnJhYWPI8Oex6p7ZAEchjK7yxr4yb9C9gvDQnpqoR//mJtUeIxNVOrM6mffsahCI7010FmWtboGpg==",
+      "path": "microsoft.azure.management.trafficmanager.fluent/1.22.2",
+      "hashPath": "microsoft.azure.management.trafficmanager.fluent.1.22.2.nupkg.sha512"
+    },
+    "Microsoft.Azure.Services.AppAuthentication/1.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oSVQ+YLgn0PfDLBRwOtHrkw06Pc6HvqIVrtFFWMg/1eafY+Hbrm1CSXnzXKXJwqUUv0ynvuwqzjN+IFR3g588w==",
+      "path": "microsoft.azure.services.appauthentication/1.0.1",
+      "hashPath": "microsoft.azure.services.appauthentication.1.0.1.nupkg.sha512"
+    },
     "Microsoft.CodeAnalysis.CSharp.Workspaces/2.8.0": {
       "type": "package",
       "serviceable": true,
@@ -3557,6 +4751,69 @@
       "sha512": "sha512-tJlJ99SD8bHBAXShOG/pXQ1K118cnsF01obEf9aAtdgLbw3yEPahZ7qvWeGMjrheUhvOsSkv/wTKYg9euKa8MQ==",
       "path": "microsoft.codeanalysis.workspaces.common/2.8.0",
       "hashPath": "microsoft.codeanalysis.workspaces.common.2.8.0.nupkg.sha512"
+    },
+    "Microsoft.Data.Edm/5.8.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-P/d8DxA6MFHroBEn/jW0LMQSIKnsRRibrZtRCLfov2boQfrQ1R1BVgkJ5oIhcQsOm0l4POv+I2ny6RBsclNbOw==",
+      "path": "microsoft.data.edm/5.8.2",
+      "hashPath": "microsoft.data.edm.5.8.2.nupkg.sha512"
+    },
+    "Microsoft.Data.OData/5.8.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oEIUtXcRiKogF0yZxA+QdgxoBJ34989qL/5xOSrTfxAhzNJV5Hw6DRdWgUCpeXFMoJUQx7ptbHCN+My/LCQfsg==",
+      "path": "microsoft.data.odata/5.8.2",
+      "hashPath": "microsoft.data.odata.5.8.2.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration.AzureKeyVault/2.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fnXCuIF00nEf+QI9Kh8T2JPSKyDr1SNUGuNqCxl18NgxYrkJJWPpg2P2gFNMOMCMMUorLsiyn3eBtZIC3KhbpQ==",
+      "path": "microsoft.extensions.configuration.azurekeyvault/2.0.2",
+      "hashPath": "microsoft.extensions.configuration.azurekeyvault.2.0.2.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration.EnvironmentVariables/2.2.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Os7uRhp9xwawY5w2tgXw/86YrmAJZl6aHiQVdS9boWybTWPkJOvXXrQ3AGwuldN1W/r+cfnwRe2ePGeFO4zlzg==",
+      "path": "microsoft.extensions.configuration.environmentvariables/2.2.4",
+      "hashPath": "microsoft.extensions.configuration.environmentvariables.2.2.4.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging.AzureAppServices/2.2.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ig+AMvywAaBZnD2WeHnmw5DojcbB8m1oC6T0kCDGcHe8e1wdaylxjYqOq0t2Q4Hq4/Ie8G8Bneej13Ol/fKdKg==",
+      "path": "microsoft.extensions.logging.azureappservices/2.2.5",
+      "hashPath": "microsoft.extensions.logging.azureappservices.2.2.5.nupkg.sha512"
+    },
+    "Microsoft.IdentityModel.Clients.ActiveDirectory/3.14.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TNsJJMiRnkeby1ovThVoV9yFsPWjAdluwOA+Nf0LtSsBVVrKQv8Qp4kYOgyNwMVj+pDwbhXISySk+4HyHVWNZQ==",
+      "path": "microsoft.identitymodel.clients.activedirectory/3.14.2",
+      "hashPath": "microsoft.identitymodel.clients.activedirectory.3.14.2.nupkg.sha512"
+    },
+    "Microsoft.Rest.ClientRuntime/2.3.18": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-daE2vz5eNmiUbx8Lm0DArlKfKVtH3IzSteR0N+AJJ7cDgj32LcFudGx9Vm0bFelmiEZ3nO4Y7XTk2nfjUK/uCg==",
+      "path": "microsoft.rest.clientruntime/2.3.18",
+      "hashPath": "microsoft.rest.clientruntime.2.3.18.nupkg.sha512"
+    },
+    "Microsoft.Rest.ClientRuntime.Azure/3.3.18": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pCtem10PRQYvzRiwJVInsccsqB0NrTjW83NF3zWk1LpN3IS0AneZKq89RyogDT7mRMT1Li/mLY8N8kU6RAiK0g==",
+      "path": "microsoft.rest.clientruntime.azure/3.3.18",
+      "hashPath": "microsoft.rest.clientruntime.azure.3.3.18.nupkg.sha512"
+    },
+    "Microsoft.Rest.ClientRuntime.Azure.Authentication/2.3.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-73wYf02cJTyhfLrXcP87AcjtcKvUHAE71uDmup8WO2HxyrsEUQR/mvyDPaGLA9aBXNVHX4M0gtbVQ7mDGDBRyA==",
+      "path": "microsoft.rest.clientruntime.azure.authentication/2.3.6",
+      "hashPath": "microsoft.rest.clientruntime.azure.authentication.2.3.6.nupkg.sha512"
     },
     "Microsoft.VisualStudio.Web.CodeGeneration/2.2.3": {
       "type": "package",
@@ -3614,6 +4871,13 @@
       "path": "microsoft.visualstudio.web.codegenerators.mvc/2.2.3",
       "hashPath": "microsoft.visualstudio.web.codegenerators.mvc.2.2.3.nupkg.sha512"
     },
+    "Microsoft.Win32.Primitives/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9ZQKCWxH7Ijp9BfahvL2Zyf1cJIk8XYLF6Yjzr2yi0b2cOut/HQ31qf1ThHAgCc3WiZMdnWcfJCgN82/0UunxA==",
+      "path": "microsoft.win32.primitives/4.3.0",
+      "hashPath": "microsoft.win32.primitives.4.3.0.nupkg.sha512"
+    },
     "NuGet.Frameworks/4.7.0": {
       "type": "package",
       "serviceable": true,
@@ -3663,12 +4927,75 @@
       "path": "system.composition.typedparts/1.0.31",
       "hashPath": "system.composition.typedparts.1.0.31.nupkg.sha512"
     },
+    "System.Diagnostics.Process/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-J0wOX07+QASQblsfxmIMFc9Iq7KTXYL3zs2G/Xc704Ylv3NpuVdo6gij6V3PGiptTxqsK0K7CdXenRvKUnkA2g==",
+      "path": "system.diagnostics.process/4.3.0",
+      "hashPath": "system.diagnostics.process.4.3.0.nupkg.sha512"
+    },
     "System.Linq.Parallel/4.3.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-td7x21K8LalpjTWCzW/nQboQIFbq9i0r+PCyBBCdLWWnm4NBcdN18vpz/G9hCpUaCIfRL+ZxJNVTywlNlB1aLQ==",
       "path": "system.linq.parallel/4.3.0",
       "hashPath": "system.linq.parallel.4.3.0.nupkg.sha512"
+    },
+    "System.Net.NetworkInformation/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zNVmWVry0pAu7lcrRBhwwU96WUdbsrGL3azyzsbXmVNptae1+Za+UgOe9Z6s8iaWhPn7/l4wQqhC56HZWq7tkg==",
+      "path": "system.net.networkinformation/4.3.0",
+      "hashPath": "system.net.networkinformation.4.3.0.nupkg.sha512"
+    },
+    "System.Net.Sockets/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-m6icV6TqQOAdgt5N/9I5KNpjom/5NFtkmGseEH+AK/hny8XrytLH3+b5M8zL/Ycg3fhIocFpUMyl/wpFnVRvdw==",
+      "path": "system.net.sockets/4.3.0",
+      "hashPath": "system.net.sockets.4.3.0.nupkg.sha512"
+    },
+    "System.Runtime.Serialization.Json/4.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+7DIJhnKYgCzUgcLbVTtRQb2l1M0FP549XFlFkQM5lmNiUBl44AfNbx4bz61xA8PzLtlYwfmif4JJJW7MPPnjg==",
+      "path": "system.runtime.serialization.json/4.0.2",
+      "hashPath": "system.runtime.serialization.json.4.0.2.nupkg.sha512"
+    },
+    "System.Spatial/5.8.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0RfZZJ8RlrfjoBPAF6pczX4Nd2kyLM8EX1PCP5Rqs/jOhJBUPYhpXjIsVAYN7kocj9IJ9XoJWAxWgXIDtJY2Ag==",
+      "path": "system.spatial/5.8.2",
+      "hashPath": "system.spatial.5.8.2.nupkg.sha512"
+    },
+    "System.Threading.Overlapped/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-m3HQ2dPiX/DSTpf+yJt8B0c+SRvzfqAJKx+QDWi+VLhz8svLT23MVjEOHPF/KiSLeArKU/iHescrbLd3yVgyNg==",
+      "path": "system.threading.overlapped/4.3.0",
+      "hashPath": "system.threading.overlapped.4.3.0.nupkg.sha512"
+    },
+    "System.Threading.ThreadPool/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-k/+g4b7vjdd4aix83sTgC9VG6oXYKAktSfNIJUNGxPEj7ryEOfzHHhfnmsZvjxawwcD9HyWXKCXmPjX8U4zeSw==",
+      "path": "system.threading.threadpool/4.3.0",
+      "hashPath": "system.threading.threadpool.4.3.0.nupkg.sha512"
+    },
+    "System.ValueTuple/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-okurQJO6NRE/apDIP23ajJ0hpiNmJ+f0BwOlB/cSqTLQlw5upkf+5+96+iG2Jw40G1fCVCyPz/FhIABUjMR+RQ==",
+      "path": "system.valuetuple/4.5.0",
+      "hashPath": "system.valuetuple.4.5.0.nupkg.sha512"
+    },
+    "WindowsAzure.Storage/8.1.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-W6ZZ0/o7+3Qb77mRAQyLjPudHG3OMeeQ4p9yY13PUdJArmRCx2cLMm5F4tpIjJXxzHC0ew0oK7DMDGILMdfCnw==",
+      "path": "windowsazure.storage/8.1.4",
+      "hashPath": "windowsazure.storage.8.1.4.nupkg.sha512"
     },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
       "type": "package",
@@ -4488,13 +5815,6 @@
       "sha512": "sha512-4kJIGOSRqD1Ccqerst4t/zsNs51plR7BIxbdKO1J/9rL+2DuNT+ieAuEv+HROelqTam3yOpKFR7TtHBt3oLpOA==",
       "path": "microsoft.extensions.configuration.commandline/2.2.0",
       "hashPath": "microsoft.extensions.configuration.commandline.2.2.0.nupkg.sha512"
-    },
-    "Microsoft.Extensions.Configuration.EnvironmentVariables/2.2.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-gIqt9PkKO01hZ0zmHnWrZ1E45MDreZTVoyDbL1kMWKtDgxxWTJpYtESTEcgpvR1uB1iex1zKGYzJpOMgmuP5TQ==",
-      "path": "microsoft.extensions.configuration.environmentvariables/2.2.0",
-      "hashPath": "microsoft.extensions.configuration.environmentvariables.2.2.0.nupkg.sha512"
     },
     "Microsoft.Extensions.Configuration.FileExtensions/2.2.0": {
       "type": "package",
@@ -5601,13 +6921,6 @@
       "sha512": "sha512-OHmbT+Zz065NKII/ZHcH9XO1dEuLGI1L2k7uYss+9C1jLxTC9kTZZuzUOyXHayRk+dft9CiDf3I/QZ0t8JKyBQ==",
       "path": "system.threading.thread/4.3.0",
       "hashPath": "system.threading.thread.4.3.0.nupkg.sha512"
-    },
-    "System.ValueTuple/4.3.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-cNLEvBX3d6MMQRZe3SMFNukVbitDAEpVZO17qa0/2FHxZ7Y7PpFRpr6m2615XYM/tYYYf0B+WyHNujqIw8Luwg==",
-      "path": "system.valuetuple/4.3.0",
-      "hashPath": "system.valuetuple.4.3.0.nupkg.sha512"
     },
     "System.Xml.ReaderWriter/4.3.0": {
       "type": "package",

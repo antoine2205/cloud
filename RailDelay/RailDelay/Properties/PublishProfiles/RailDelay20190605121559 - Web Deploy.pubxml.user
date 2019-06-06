@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAANnbrjO8ee0yZLwD35CjSVwAAAAACAAAAAAAQZgAAAAEAACAAAACpAOEGQhCiR0/K5mXYUERg0I/sTvpiZKFSr2neXn88wQAAAAAOgAAAAAIAACAAAAAFFd2a1HS3UbqjGKXsin++83A+tl3xcF8ry/OtGzEVR4AAAACkDeYVvm9ux7fyLFr7rcJCpaq9nes/3tO7QELHTAMAdy42QH4y8bP+6q2RpjOSZd5OUsQxyCel7ND06HviEFEFy3E5LiiEWnq8l1m8eLIF81P0hJm+h/+etE8mZtEzfQHdhigjyHGhe+mi/zgfXsNmXnok5R82fIgU/q8nG02v6UAAAABfY2ULeaDDlslgXtcV9vudqTC6NrTugfCTF76WKwq+TsjvnlsrJcOnLLauUfmVWMvSVLDggURa9sSB60DmqTl0</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="AzureDBConnection">
+      <Value>Server=tcp:s097793db.database.windows.net,1433%3bInitial Catalog=RailDelay%3bPersist Security Info=False%3bUser ID=s097793db%3bPassword=JKcRrDd6%3bMultipleActiveResultSets=False%3bEncrypt=True%3bTrustServerCertificate=False%3bConnection Timeout=30%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>
