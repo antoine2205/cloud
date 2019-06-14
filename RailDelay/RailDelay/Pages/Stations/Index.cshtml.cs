@@ -24,6 +24,7 @@ namespace RailDelay.Pages.Stations
 
         public async Task OnGetAsync(string sortOrder, string searchString, int? pageIndex)
         {
+            currentSort = sortOrder;
             IdSort = String.IsNullOrEmpty(sortOrder) ? "id_desc" : "";
             NameSort = sortOrder == "name_desc" ? "name_asce" : "name_desc";
             CurrentFilter = searchString;
