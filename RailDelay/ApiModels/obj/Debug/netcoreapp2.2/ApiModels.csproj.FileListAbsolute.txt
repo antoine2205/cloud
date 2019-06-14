@@ -1,0 +1,9 @@
+C:\Users\moena\source\repos\RailDelay GitHub\cloud\RailDelay\ApiModels\bin\Debug\netcoreapp2.2\ApiModels.deps.json
+C:\Users\moena\source\repos\RailDelay GitHub\cloud\RailDelay\ApiModels\bin\Debug\netcoreapp2.2\ApiModels.dll
+C:\Users\moena\source\repos\RailDelay GitHub\cloud\RailDelay\ApiModels\bin\Debug\netcoreapp2.2\ApiModels.pdb
+C:\Users\moena\source\repos\RailDelay GitHub\cloud\RailDelay\ApiModels\obj\Debug\netcoreapp2.2\ApiModels.csprojAssemblyReference.cache
+C:\Users\moena\source\repos\RailDelay GitHub\cloud\RailDelay\ApiModels\obj\Debug\netcoreapp2.2\ApiModels.csproj.CoreCompileInputs.cache
+C:\Users\moena\source\repos\RailDelay GitHub\cloud\RailDelay\ApiModels\obj\Debug\netcoreapp2.2\ApiModels.AssemblyInfoInputs.cache
+C:\Users\moena\source\repos\RailDelay GitHub\cloud\RailDelay\ApiModels\obj\Debug\netcoreapp2.2\ApiModels.AssemblyInfo.cs
+C:\Users\moena\source\repos\RailDelay GitHub\cloud\RailDelay\ApiModels\obj\Debug\netcoreapp2.2\ApiModels.dll
+C:\Users\moena\source\repos\RailDelay GitHub\cloud\RailDelay\ApiModels\obj\Debug\netcoreapp2.2\ApiModels.pdb

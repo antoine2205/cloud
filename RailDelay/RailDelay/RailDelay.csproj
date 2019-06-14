@@ -6,21 +6,6 @@
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Compile Remove="Data\Migrations\20190603190226_SeedDelays.cs" />
-    <Compile Remove="Data\Migrations\20190603190226_SeedDelays.Designer.cs" />
-    <Compile Remove="Data\Migrations\20190603191152_SeedDelayTabel.cs" />
-    <Compile Remove="Data\Migrations\20190603191152_SeedDelayTabel.Designer.cs" />
-    <Compile Remove="Data\Migrations\20190603191304_SeedDelayDB.cs" />
-    <Compile Remove="Data\Migrations\20190603191304_SeedDelayDB.Designer.cs" />
-    <Compile Remove="Data\Migrations\20190603192046_SeedDelayDB.cs" />
-    <Compile Remove="Data\Migrations\20190603192046_SeedDelayDB.Designer.cs" />
-    <Compile Remove="Data\Migrations\20190603193618_SeedDelayDB.cs" />
-    <Compile Remove="Data\Migrations\20190603193618_SeedDelayDB.Designer.cs" />
-    <Compile Remove="Data\Migrations\20190603194144_SeedDelayDB.cs" />
-    <Compile Remove="Data\Migrations\20190603194144_SeedDelayDB.Designer.cs" />
-  </ItemGroup>
-
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
@@ -30,8 +15,17 @@
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
     <PackageReference Include="Microsoft.Azure.Management.Fluent" Version="1.22.2" />
     <PackageReference Include="Microsoft.Azure.Management.ResourceManager.Fluent" Version="1.22.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.2.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Microsoft.Extensions.Logging.AzureAppServices" Version="2.2.5" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\ApiClient\CoreApiClient.csproj" />
   </ItemGroup>
 
 </Project>

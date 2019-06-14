@@ -1,4 +1,5 @@
-﻿using RailDelay.Models;
+﻿using Microsoft.EntityFrameworkCore;
+using RailDelay.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,12 +19,53 @@ namespace RailDelay.Data
                 return; // DB has been seeded
             }
 
+            var tickets = new Ticket[]{
+                new Ticket{
+                    //ID = 1,
+                    TicketName = "Biljet"
+                },
+                new Ticket
+                {
+                    //ID = 2,
+                    TicketName = "Treinkaart"
+                },
+                new Ticket
+                {
+                    //ID = 3,
+                    TicketName = "Campus"
+                },
+                new Ticket
+                {
+                    //ID = 4,
+                    TicketName = "Halftijdse Treinkaart"
+                },
+                new Ticket
+                {
+                    //ID = 5,
+                    TicketName = "Pass"
+                },
+                new Ticket
+                {
+                    //ID = 6,
+                    TicketName = "Kaart"
+                },
+                new Ticket
+                {
+                    //ID = 7,
+                    TicketName = "MOBIB Kaart"
+                }};
+
+            foreach (Ticket ticket in tickets) {
+                context.Ticket.Add(ticket);
+            }
+            context.SaveChanges();
+
             var delays = new Delay[]
             {
                 new Delay{
-                    ID = 1,
+                    //ID = 1,
                     TravelDate = DateTime.Parse("2019-04-01"),
-                    TicketID = 1,
+                    TicketID = 2,
                     TicketNumber = "",
                     LastDateOfUse = DateTime.Parse("2019-03-28"),
                     DepartureTrainStationID = "BE.NMBS.008821006",
@@ -40,9 +82,9 @@ namespace RailDelay.Data
                 },
                 new Delay
                 {
-                    ID = 2,
+                    //ID = 2,
                     TravelDate = DateTime.Parse("2019-05-01"),
-                    TicketID = 1,
+                    TicketID = 2,
                     TicketNumber = "",
                     LastDateOfUse = DateTime.Parse("2019-04-28"),
                     DepartureTrainStationID = "BE.NMBS.008813003",
@@ -63,7 +105,6 @@ namespace RailDelay.Data
                 context.Delay.Add(delay);
             }
             context.SaveChanges();
-
         }
     }
 }

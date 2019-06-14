@@ -14,14 +14,18 @@ namespace RailDelay.Data
         {
         }
 
+        public DbSet<Ticket> Ticket { get; set; }
         public DbSet<Delay> Delay { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<Ticket>().ToTable("Ticket");
             modelBuilder.Entity<Delay>().ToTable("Delay");
             modelBuilder.Seed();
         }
+
+        public DbSet<RailDelay.Models.Traveler> Traveler { get; set; }
 
     }
 }

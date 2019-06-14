@@ -1,0 +1,4 @@
+C:\Users\moena\source\repos\RailDelay GitHub\cloud\RailDelay\ApiClient\obj\Debug\netcoreapp2.2\ApiClient.csprojAssemblyReference.cache
+C:\Users\moena\source\repos\RailDelay GitHub\cloud\RailDelay\ApiClient\obj\Debug\netcoreapp2.2\ApiClient.csproj.CoreCompileInputs.cache
+C:\Users\moena\source\repos\RailDelay GitHub\cloud\RailDelay\ApiClient\obj\Debug\netcoreapp2.2\ApiClient.AssemblyInfoInputs.cache
+C:\Users\moena\source\repos\RailDelay GitHub\cloud\RailDelay\ApiClient\obj\Debug\netcoreapp2.2\ApiClient.AssemblyInfo.cs

@@ -36,17 +36,35 @@
             </div>
             <div class="form-group">
                 <label asp-for="Delay.DepartureTrainStationID" class="control-label"></label>
-                <input asp-for="Delay.DepartureTrainStationID" class="form-control" />
+                <select asp-for="Delay.DepartureTrainStationID" class="form-control">
+                    <option value="">Select a station...</option>
+                    @foreach (TrainStation station in Model.StationApiQ)
+                    {
+                        <option value="@station.ID">@station.Name</option>
+                    }
+                </select>
                 <span asp-validation-for="Delay.DepartureTrainStationID" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Delay.DestinationTrainStationID" class="control-label"></label>
-                <input asp-for="Delay.DestinationTrainStationID" class="form-control" />
+                <select asp-for="Delay.DestinationTrainStationID" class="form-control">
+                    <option value="">Select a station...</option>
+                    @foreach (TrainStation station in Model.StationApiQ)
+                    {
+                        <option value="@station.ID">@station.Name</option>
+                    }
+                </select>
                 <span asp-validation-for="Delay.DestinationTrainStationID" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Delay.TransferTrainStationID" class="control-label"></label>
-                <input asp-for="Delay.TransferTrainStationID" class="form-control" />
+                <select asp-for="Delay.TransferTrainStationID" class="form-control">
+                    <option value="">Select a station...</option>
+                    @foreach (TrainStation station in Model.StationApiQ)
+                    {
+                        <option value="@station.ID">@station.Name</option>
+                    }
+                </select>
                 <span asp-validation-for="Delay.TransferTrainStationID" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -88,6 +106,11 @@
                 <label asp-for="Delay.ActualTrain2Number" class="control-label"></label>
                 <input asp-for="Delay.ActualTrain2Number" class="form-control" />
                 <span asp-validation-for="Delay.ActualTrain2Number" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Delay.OwnerID" class="control-label" hidden></label>
+                <input asp-for="Delay.OwnerID" class="form-control" hidden/>
+                <span asp-validation-for="Delay.OwnerID" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />

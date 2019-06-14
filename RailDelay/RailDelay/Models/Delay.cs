@@ -68,5 +68,8 @@ namespace RailDelay.Models
         public string ActualTrain2Number { get; set; }
 
         public Ticket Ticket { get; set; }
+        
+        // user ID from AspNetUser table
+        public string OwnerID { get; set; }
     }
 }

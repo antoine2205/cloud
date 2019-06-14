@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 using RailDelay.Data;
 using RailDelay.Models;
 
@@ -25,6 +27,8 @@ namespace RailDelay.Pages.Delays
         [BindProperty]
         public Delay Delay { get; set; }
 
+        public IQueryable<TrainStation> StationApiQ;
+
         public async Task<IActionResult> OnGetAsync(int? id)
         {
             if (id == null)
@@ -39,7 +43,21 @@ namespace RailDelay.Pages.Delays
             {
                 return NotFound();
             }
-           ViewData["TicketID"] = new SelectList(_context.Set<Ticket>(), "ID", "TicketName");
+
+            ViewData["TicketID"] = new SelectList(_context.Set<Ticket>(), "ID", "TicketName");
+
+            using (var httpClient = new HttpClient())
+            {
+
+                using (var response = await httpClient.GetAsync("http://api.irail.be/stations/?format=json&lang=en"))
+                {
+                    string apiResponse = await response.Content.ReadAsStringAsync();
+                    StationApi stationApi = new StationApi();
+                    stationApi = JsonConvert.DeserializeObject<StationApi>(apiResponse);
+                    StationApiQ = stationApi.Station.AsQueryable<TrainStation>().OrderBy(s => s.Name);
+                }
+            }
+
             return Page();
         }
 

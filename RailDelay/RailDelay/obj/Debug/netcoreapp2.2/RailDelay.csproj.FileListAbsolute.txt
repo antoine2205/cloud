@@ -46,6 +46,11 @@ C:\Users\moena\source\repos\RailDelay GitHub\cloud\RailDelay\RailDelay\bin\Debug
 C:\Users\moena\source\repos\RailDelay GitHub\cloud\RailDelay\RailDelay\bin\Debug\netcoreapp2.2\RailDelay.pdb
 C:\Users\moena\source\repos\RailDelay GitHub\cloud\RailDelay\RailDelay\bin\Debug\netcoreapp2.2\RailDelay.Views.dll
 C:\Users\moena\source\repos\RailDelay GitHub\cloud\RailDelay\RailDelay\bin\Debug\netcoreapp2.2\RailDelay.Views.pdb
+C:\Users\moena\source\repos\RailDelay GitHub\cloud\RailDelay\RailDelay\bin\Debug\netcoreapp2.2\CoreApiClient.dll
+C:\Users\moena\source\repos\RailDelay GitHub\cloud\RailDelay\RailDelay\bin\Debug\netcoreapp2.2\CoreApiModels.dll
+C:\Users\moena\source\repos\RailDelay GitHub\cloud\RailDelay\RailDelay\bin\Debug\netcoreapp2.2\CoreApiClient.pdb
+C:\Users\moena\source\repos\RailDelay GitHub\cloud\RailDelay\RailDelay\bin\Debug\netcoreapp2.2\CoreApiModels.pdb
+C:\Users\moena\source\repos\RailDelay GitHub\cloud\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\RailDelay.csprojAssemblyReference.cache
 C:\Users\moena\source\repos\RailDelay GitHub\cloud\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\RailDelay.csproj.CoreCompileInputs.cache
 C:\Users\moena\source\repos\RailDelay GitHub\cloud\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\RailDelay.RazorAssemblyInfo.cache
 C:\Users\moena\source\repos\RailDelay GitHub\cloud\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\RailDelay.RazorAssemblyInfo.cs
@@ -67,8 +72,13 @@ C:\Users\moena\source\repos\RailDelay GitHub\cloud\RailDelay\RailDelay\obj\Debug
 C:\Users\moena\source\repos\RailDelay GitHub\cloud\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\Razor\Pages\Shared\_Layout.g.cshtml.cs
 C:\Users\moena\source\repos\RailDelay GitHub\cloud\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\Razor\Pages\Shared\_LoginPartial.g.cshtml.cs
 C:\Users\moena\source\repos\RailDelay GitHub\cloud\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\Razor\Pages\Shared\_ValidationScriptsPartial.g.cshtml.cs
-C:\Users\moena\source\repos\RailDelay GitHub\cloud\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\Razor\Pages\Station\Details.g.cshtml.cs
-C:\Users\moena\source\repos\RailDelay GitHub\cloud\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\Razor\Pages\Station\Index.g.cshtml.cs
+C:\Users\moena\source\repos\RailDelay GitHub\cloud\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\Razor\Pages\Stations\Details.g.cshtml.cs
+C:\Users\moena\source\repos\RailDelay GitHub\cloud\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\Razor\Pages\Stations\Index.g.cshtml.cs
+C:\Users\moena\source\repos\RailDelay GitHub\cloud\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\Razor\Pages\Travelers\Create.g.cshtml.cs
+C:\Users\moena\source\repos\RailDelay GitHub\cloud\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\Razor\Pages\Travelers\Delete.g.cshtml.cs
+C:\Users\moena\source\repos\RailDelay GitHub\cloud\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\Razor\Pages\Travelers\Details.g.cshtml.cs
+C:\Users\moena\source\repos\RailDelay GitHub\cloud\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\Razor\Pages\Travelers\Edit.g.cshtml.cs
+C:\Users\moena\source\repos\RailDelay GitHub\cloud\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\Razor\Pages\Travelers\Index.g.cshtml.cs
 C:\Users\moena\source\repos\RailDelay GitHub\cloud\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\Razor\Pages\_ViewImports.g.cshtml.cs
 C:\Users\moena\source\repos\RailDelay GitHub\cloud\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\Razor\Pages\_ViewStart.g.cshtml.cs
 C:\Users\moena\source\repos\RailDelay GitHub\cloud\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
@@ -76,7 +86,58 @@ C:\Users\moena\source\repos\RailDelay GitHub\cloud\RailDelay\RailDelay\obj\Debug
 C:\Users\moena\source\repos\RailDelay GitHub\cloud\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\RailDelay.RazorTargetAssemblyInfo.cache
 C:\Users\moena\source\repos\RailDelay GitHub\cloud\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\RailDelay.RazorTargetAssemblyInfo.cs
 C:\Users\moena\source\repos\RailDelay GitHub\cloud\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\RailDelay.Views.pdb
+C:\Users\moena\source\repos\RailDelay GitHub\cloud\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\RailDelay.csproj.CopyComplete
 C:\Users\moena\source\repos\RailDelay GitHub\cloud\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\RailDelay.dll
 C:\Users\moena\source\repos\RailDelay GitHub\cloud\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\RailDelay.pdb
-C:\Users\moena\source\repos\RailDelay GitHub\cloud\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\RailDelay.csproj.CopyComplete
-C:\Users\moena\source\repos\RailDelay GitHub\cloud\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\RailDelay.csprojAssemblyReference.cache
+C:\Users\moena\source\repos\RailDelay GitHub\cloud\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\Razor\Pages\Form\Index.g.cshtml.cs
+C:\Users\antoi\Desktop\RailDelay\RailDelay\bin\Debug\netcoreapp2.2\RailDelay.deps.json
+C:\Users\antoi\Desktop\RailDelay\RailDelay\bin\Debug\netcoreapp2.2\RailDelay.runtimeconfig.json
+C:\Users\antoi\Desktop\RailDelay\RailDelay\bin\Debug\netcoreapp2.2\RailDelay.runtimeconfig.dev.json
+C:\Users\antoi\Desktop\RailDelay\RailDelay\bin\Debug\netcoreapp2.2\RailDelay.dll
+C:\Users\antoi\Desktop\RailDelay\RailDelay\bin\Debug\netcoreapp2.2\RailDelay.pdb
+C:\Users\antoi\Desktop\RailDelay\RailDelay\bin\Debug\netcoreapp2.2\RailDelay.Views.dll
+C:\Users\antoi\Desktop\RailDelay\RailDelay\bin\Debug\netcoreapp2.2\RailDelay.Views.pdb
+C:\Users\antoi\Desktop\RailDelay\RailDelay\bin\Debug\netcoreapp2.2\CoreApiClient.dll
+C:\Users\antoi\Desktop\RailDelay\RailDelay\bin\Debug\netcoreapp2.2\CoreApiModels.dll
+C:\Users\antoi\Desktop\RailDelay\RailDelay\bin\Debug\netcoreapp2.2\CoreApiClient.pdb
+C:\Users\antoi\Desktop\RailDelay\RailDelay\bin\Debug\netcoreapp2.2\CoreApiModels.pdb
+C:\Users\antoi\Desktop\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\RailDelay.csprojAssemblyReference.cache
+C:\Users\antoi\Desktop\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\RailDelay.csproj.CoreCompileInputs.cache
+C:\Users\antoi\Desktop\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\RailDelay.RazorAssemblyInfo.cache
+C:\Users\antoi\Desktop\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\RailDelay.RazorAssemblyInfo.cs
+C:\Users\antoi\Desktop\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\RailDelay.AssemblyInfoInputs.cache
+C:\Users\antoi\Desktop\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\RailDelay.AssemblyInfo.cs
+C:\Users\antoi\Desktop\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\RailDelay.TagHelpers.input.cache
+C:\Users\antoi\Desktop\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\RailDelay.TagHelpers.output.cache
+C:\Users\antoi\Desktop\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\RailDelay.RazorCoreGenerate.cache
+C:\Users\antoi\Desktop\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\_ViewStart.g.cshtml.cs
+C:\Users\antoi\Desktop\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\Razor\Pages\Delays\Create.g.cshtml.cs
+C:\Users\antoi\Desktop\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\Razor\Pages\Delays\Delete.g.cshtml.cs
+C:\Users\antoi\Desktop\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\Razor\Pages\Delays\Details.g.cshtml.cs
+C:\Users\antoi\Desktop\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\Razor\Pages\Delays\Edit.g.cshtml.cs
+C:\Users\antoi\Desktop\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\Razor\Pages\Delays\Index.g.cshtml.cs
+C:\Users\antoi\Desktop\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\Razor\Pages\Error.g.cshtml.cs
+C:\Users\antoi\Desktop\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\Razor\Pages\Form\Index.g.cshtml.cs
+C:\Users\antoi\Desktop\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\Razor\Pages\Index.g.cshtml.cs
+C:\Users\antoi\Desktop\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\Razor\Pages\Privacy.g.cshtml.cs
+C:\Users\antoi\Desktop\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\Razor\Pages\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\antoi\Desktop\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\Razor\Pages\Shared\_Layout.g.cshtml.cs
+C:\Users\antoi\Desktop\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\Razor\Pages\Shared\_LoginPartial.g.cshtml.cs
+C:\Users\antoi\Desktop\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\Razor\Pages\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\antoi\Desktop\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\Razor\Pages\Stations\Details.g.cshtml.cs
+C:\Users\antoi\Desktop\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\Razor\Pages\Stations\Index.g.cshtml.cs
+C:\Users\antoi\Desktop\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\Razor\Pages\Travelers\Create.g.cshtml.cs
+C:\Users\antoi\Desktop\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\Razor\Pages\Travelers\Delete.g.cshtml.cs
+C:\Users\antoi\Desktop\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\Razor\Pages\Travelers\Details.g.cshtml.cs
+C:\Users\antoi\Desktop\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\Razor\Pages\Travelers\Edit.g.cshtml.cs
+C:\Users\antoi\Desktop\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\Razor\Pages\Travelers\Index.g.cshtml.cs
+C:\Users\antoi\Desktop\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\Razor\Pages\_ViewImports.g.cshtml.cs
+C:\Users\antoi\Desktop\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\Razor\Pages\_ViewStart.g.cshtml.cs
+C:\Users\antoi\Desktop\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\antoi\Desktop\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\antoi\Desktop\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\RailDelay.RazorTargetAssemblyInfo.cache
+C:\Users\antoi\Desktop\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\RailDelay.RazorTargetAssemblyInfo.cs
+C:\Users\antoi\Desktop\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\RailDelay.Views.pdb
+C:\Users\antoi\Desktop\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\RailDelay.csproj.CopyComplete
+C:\Users\antoi\Desktop\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\RailDelay.dll
+C:\Users\antoi\Desktop\RailDelay\RailDelay\obj\Debug\netcoreapp2.2\RailDelay.pdb

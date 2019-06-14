@@ -14,8 +14,11 @@ using RailDelay.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using RailDelay.Models;
-using System.Data.SqlClient;
-using Microsoft.AspNetCore.Server.IISIntegration;
+using Microsoft.Azure.Services.AppAuthentication;
+using Microsoft.Azure.KeyVault;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc.Authorization;
+using RailDelay.Authorization;
 
 namespace RailDelay
 {
@@ -38,33 +41,52 @@ namespace RailDelay
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-            services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(
-                    //Configuration.GetConnectionString("DefaultConnection")));
-                    Configuration.GetConnectionString("AzureDBConnection")));
+            if(Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "Production")
+            {
+                services.AddDbContext<ApplicationDbContext>(options =>
+                    options.UseSqlServer(
+                        Configuration.GetConnectionString("AzureDbConnection")));
+            }
+            else
+            {
+                services.AddDbContext<ApplicationDbContext>(options =>
+                    options.UseSqlServer(
+                        Configuration.GetConnectionString("LocalDbConnection")));
+            }
+
+            services.AddScoped<IRailDelayRepository, SQLRailDelayRepository>();
+
             services.AddDefaultIdentity<IdentityUser>()
                 .AddDefaultUI(UIFramework.Bootstrap4)
+                .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
             services.AddAuthentication()
                 .AddMicrosoftAccount(microsoftOptions =>
                     {
-                        //microsoftOptions.ClientId = Configuration["Authentication:Microsoft:ClientId"];
-                        //microsoftOptions.ClientSecret = Configuration["Authentication:Microsoft:ClientSecret"];
-                        microsoftOptions.ClientId = "8c9f2a59-9a34-4d55-809d-1106979cb499";
-                        microsoftOptions.ClientSecret = "5OClUrrLBj5ty=O1@iv.MK2*og_a@ECL";
+                        microsoftOptions.ClientId = Configuration["Authentication:Microsoft:ClientId"];
+                        microsoftOptions.ClientSecret = Configuration["Authentication:Microsoft:ClientSecret"];
                     });
 
             //services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-            services.AddMvcCore();
+            services.AddMvcCore(config => 
+            {
+                var policy = new AuthorizationPolicyBuilder()
+                                 .RequireAuthenticatedUser()
+                                 .Build();
+                config.Filters.Add(new AuthorizeFilter(policy));
+            });
 
-            services.AddScoped<IRailDelayRepository, SQLRailDelayRepository>();
+            services.AddScoped<IAuthorizationHandler, DelayIsOwnerAuthorizationHandler>();
+
+            //Automatically perform database migration
+            services.BuildServiceProvider().GetService<ApplicationDbContext>().Database.Migrate();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            if (env.IsDevelopment() || env.IsProduction())
+            if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
                 app.UseDatabaseErrorPage();
@@ -83,6 +105,10 @@ namespace RailDelay
             app.UseAuthentication();
 
             app.UseMvcWithDefaultRoute();
+            /*app.UseMvc(routes =>
+            {
+                routes.MapRoute("default", "{controller=Home}/{action=Index}/{id?}");
+            });*/
         }
     }
 }
