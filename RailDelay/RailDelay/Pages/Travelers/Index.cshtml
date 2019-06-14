@@ -7,9 +7,11 @@
 
 <h1>Index</h1>
 
+@if(model.Traveler.count() == 0){
 <p>
     <a asp-page="Create">Create New</a>
 </p>
+}
 <table class="table">
     <thead>
         <tr>
@@ -93,8 +95,8 @@
             </td>
             <td>
                 <a asp-page="./Edit" asp-route-id="@item.OwnerID">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.OwnerID">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.OwnerID">Delete</a>
+                <!-- <a asp-page="./Details" asp-route-id="@item.OwnerID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.OwnerID">Delete</a> -->
             </td>
         </tr>
 }
