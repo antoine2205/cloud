@@ -20,7 +20,7 @@
     <thead>
         <tr>
             <th>
-                <a asp-page="./Index" asp-route-sortOrder="@Model.IdSort">
+                <a asp-page="./Index" asp-route-sortOrder="@Model.IdSort" asp-route-searchString="@Model.CurrentFilter">
                     @Html.DisplayNameFor(model => model.StationList[0].ID)
                 </a>
             </th>
@@ -28,7 +28,7 @@
                 @Html.DisplayNameFor(model => model.StationList[0].URL)
             </th>
             <th>
-                <a asp-page="./Index" asp-route-sortOrder="@Model.NameSort">
+                <a asp-page="./Index" asp-route-sortOrder="@Model.NameSort" asp-route-searchString="@Model.CurrentFilter">
                     @Html.DisplayNameFor(model => model.StationList[0].Name)
                 </a>
             </th>
@@ -58,21 +58,21 @@
 <div>
     @if (Model.StationList.HasPreviousPage)
     {
-        <a asp-page="./Index" asp-route-pageindex="@(Model.StationList.PageIndex-1)" asp-route-searchString="@Model.CurrentFilter"><<< </a>
+        <a asp-page="./Index" asp-route-pageindex="@(Model.StationList.PageIndex-1)" asp-route-sortOrder="@Model.CurrentSort" asp-route-searchString="@Model.CurrentFilter"><<< </a>
     }
     else
     {
-        <a asp-page="./Index" asp-route-pageindex="@(Model.StationList.PageIndex)" asp-route-searchString="@Model.CurrentFilter"><<< </a>
+        <a asp-page="./Index" asp-route-pageindex="@(Model.StationList.PageIndex)" asp-route-sortOrder="@Model.CurrentSort" asp-route-searchString="@Model.CurrentFilter"><<< </a>
     }
 
     @Model.StationList.PageIndex
 
     @if(Model.StationList.HasNextPage)
     {
-    <a asp-page="./Index" asp-route-pageindex="@(Model.StationList.PageIndex+1)" asp-route-searchString="@Model.CurrentFilter"> >>></a>
+    <a asp-page="./Index" asp-route-pageindex="@(Model.StationList.PageIndex+1)" aps-route-sortOrder=@Model.CurrentSort asp-route-searchString="@Model.CurrentFilter"> >>></a>
     }
     else
     {
-    <a asp-page="./Index" asp-route-pageindex="@(Model.StationList.PageIndex)" asp-route-searchString="@Model.CurrentFilter"> >>></a>
+    <a asp-page="./Index" asp-route-pageindex="@(Model.StationList.PageIndex)" asp-route-sortOrder=@Model.CurrentSort asp-route-searchString="@Model.CurrentFilter"> >>></a>
     }
 </div>
